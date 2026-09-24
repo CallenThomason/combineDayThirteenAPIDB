@@ -68,3 +68,7 @@ When we add, update, or remove something, those changes need to be saved to the 
 DI allows our classes to receive the things they need instead of creating manually
 
 Ex of manually creating classes / object * Student students = new Student(); *
+
+## Csproj folder
+
+This contains all of the installs that your project has
