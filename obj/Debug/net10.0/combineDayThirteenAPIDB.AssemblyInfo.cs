@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("combineDayThirteenAPIDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+196c38e8e812850318a982108990b6fc8539567a")]
 [assembly: System.Reflection.AssemblyProductAttribute("combineDayThirteenAPIDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("combineDayThirteenAPIDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -43,5 +43,39 @@ namespace combineDayThirteenAPIDB.Controllers
             ); 
         }
 
+        [HttpPut("UpdateStudent/{id}")]
+
+        public ActionResult<Student> UpdateStudent(int id, [FromBody] Student student)
+        {
+            //possible null return, we add the null operator
+            Student? updated = _student.Replace(id, student);
+
+            //if the input id is not in the database we return NotFound
+            if(updated is null)
+            {
+                return NotFound($"No student with id {id} was found"); 
+            }
+            return NoContent(); 
+
+        }
+
+        //Send only the fields you want to change. Everything else stays the same
+        [HttpPatch("Patch/{id}")]
+
+        public ActionResult<Student> Patch(int id, [FromBody] Student changes)
+        {
+            Student? changed = _student.Patch(id, changes);
+            if(changed is null)
+            {
+                return NotFound($"No student with id {id} was found"); 
+            }
+            return NoContent(); 
+        }
+
+    //     "id": 1,
+    // "firstname": "Chris",
+    // "lastname": "Estrada", 
+    // "email": "cestrada@codestack.co"
+
     }
 }
